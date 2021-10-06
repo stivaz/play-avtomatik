@@ -1,0 +1,60 @@
+.footer
+
+	&__wrapper
+		padding: 40px 0
+		background-color: #6D156C
+
+	&__top
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		margin-bottom: 45px
+		+r(991)
+			flex-direction: column
+			margin-bottom: 30px
+
+	&__logo
+		width: 230px
+		margin-right: 70px
+		flex-shrink: 0
+		+r(991)
+			margin-bottom: 30px
+
+	&__bottom
+		display: flex
+		align-items: center
+		justify-content: space-between
+		+r(767)
+			flex-direction: column
+
+	&__copyright,
+	&__limit
+		font-size: 14px
+		line-height: 25px
+		color: #D995DC
+
+		span
+			color: $color-grey
+
+	&__copyright
+		margin-right: 65px
+		+r(767)
+			margin-right: 0
+			order: 2
+			text-align: center
+
+	&__limit
+		//padding-left: 46px
+		position: relative
+		+r(767)
+			margin-bottom: 20px
+			text-align: center
+
+		//&::before
+		//	position: absolute
+		//	content: ''
+		//	width: 34px
+		//	height: 30px
+		//	top: calc(50% - 15px)
+		//	left: 0
+		//	+svg(limit)
