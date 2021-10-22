@@ -22,6 +22,7 @@ Disallow: */&
 Disallow: /&
 Disallow: /?
 Disallow: /*?*
+Disallow: /slots/
 Allow: /wp-content/uploads/
 Allow: *.css
 Allow: *.js
