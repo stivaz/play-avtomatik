@@ -23,7 +23,9 @@ Disallow: /&
 Disallow: /?
 Disallow: /*?*
 Disallow: /slots/
+Disallow: /faq/
 Allow: /wp-content/uploads/
 Allow: *.css
 Allow: *.js
+
 Host: playss-avtomatikzz.azurewebsites.net
