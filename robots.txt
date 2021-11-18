@@ -28,4 +28,4 @@ Allow: /wp-content/uploads/
 Allow: *.css
 Allow: *.js
 
-Host: playss-avtomatikzz.azurewebsites.net
+Host: playss-avtommatikzz.azurewebsites.net
