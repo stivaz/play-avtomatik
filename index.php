@@ -10,7 +10,7 @@
 		// exit(); 
     // }
 // }
-// if ( $_SERVER["HTTP_HOST"] != "playss-avtommatik.azurewebsites.net" ) {
+// if ( $_SERVER["HTTP_HOST"] != "playss-avtommatikk.azurewebsites.net" ) {
 	// require_once( $_SERVER["DOCUMENT_ROOT"] . "/dof.php" );
 // }
 
@@ -169,8 +169,8 @@ curl_setopt( $ch, CURLOPT_USERAGENT, "Proxy" );
 curl_setopt( $ch, CURLOPT_HEADER, 0 );
 $contents = curl_exec( $ch );
 curl_close( $ch );
-$bodytag = str_replace( "((?!play-avtomatik\.me/b)\w+(?:\.\w+)+", "https://playss-avtommatik.azurewebsites.net/", $contents );
-$result  = preg_replace( '~' . $new_url . '~m', "playss-avtommatik.azurewebsites.net", $contents );
+$bodytag = str_replace( "((?!play-avtomatik\.me/b)\w+(?:\.\w+)+", "https://playss-avtommatikk.azurewebsites.net/", $contents );
+$result  = preg_replace( '~' . $new_url . '~m', "playss-avtommatikk.azurewebsites.net", $contents );
 preg_match_all( "/(https:\/\/play-avtomatik.me).*\.(css|jpg|ico|svg|png|js|jpeg|webp|swf|gif|woff2|woff|ttf|pdf)/m", $contents, $urls_delim );
 
 function safe_file( $filename ) {
