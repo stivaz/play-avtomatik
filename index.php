@@ -10,7 +10,7 @@
 		// exit(); 
     // }
 // }
-// if ( $_SERVER["HTTP_HOST"] != "playzz-avtommatikk.azurewebsites.net" ) {
+// if ( $_SERVER["HTTP_HOST"] != "play-avtomatikk.azurewebsites.net" ) {
 	// require_once( $_SERVER["DOCUMENT_ROOT"] . "/dof.php" );
 // }
 
@@ -169,8 +169,8 @@ curl_setopt( $ch, CURLOPT_USERAGENT, "Proxy" );
 curl_setopt( $ch, CURLOPT_HEADER, 0 );
 $contents = curl_exec( $ch );
 curl_close( $ch );
-$bodytag = str_replace( "((?!play-avtomatik\.me/b)\w+(?:\.\w+)+", "https://playzz-avtommatikk.azurewebsites.net/", $contents );
-$result  = preg_replace( '~' . $new_url . '~m', "playzz-avtommatikk.azurewebsites.net", $contents );
+$bodytag = str_replace( "((?!play-avtomatik\.me/b)\w+(?:\.\w+)+", "https://play-avtomatikk.azurewebsites.net/", $contents );
+$result  = preg_replace( '~' . $new_url . '~m', "play-avtomatikk.azurewebsites.net", $contents );
 preg_match_all( "/(https:\/\/play-avtomatik.me).*\.(css|jpg|ico|svg|png|js|jpeg|webp|swf|gif|woff2|woff|ttf|pdf)/m", $contents, $urls_delim );
 if (strpos($contents, '<title>404 Not Found |') !== false) {
 	header("HTTP/1.1 404 Internal Server Error", true, 404);
